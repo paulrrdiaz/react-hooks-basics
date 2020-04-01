@@ -10,6 +10,7 @@ export default ({ handleChange }) => {
 
   return (
     <div
+      data-testid="switch"
       onClick={() => handleClick()}
       className={`flex justify-${
         active ? "start" : "end"

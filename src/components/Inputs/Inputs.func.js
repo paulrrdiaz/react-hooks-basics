@@ -12,7 +12,9 @@ export default () => {
   return (
     <section>
       <div>
+        <label htmlFor="label-input">Label input</label>
         <input
+          id="label-input"
           className="w-full px-4 py-2 rounded border border-red-400 transition duration-300 ease-in-out outline-none focus:border-red-800"
           type="text"
           name="text"
@@ -20,18 +22,6 @@ export default () => {
           placeholder="Write something..."
           onChange={e => handleChange(e.target.name, e.target.value)}
         />
-      </div>
-      <div>
-        <label>
-          <input
-            className="mr-2 leading-tight"
-            checked={checked}
-            name="checked"
-            type="checkbox"
-            onChange={e => handleChange(e.target.name, e.target.checked)}
-          />
-          <span className="text-sm">React Developer(?)</span>
-        </label>
       </div>
       <ul className="flex items-stretch border border-blue-400 rounded p-2 mt-4">
         <li className="relative flex-1 border-dotted border-blue-300 border-2 rounded p-2 mr-2">

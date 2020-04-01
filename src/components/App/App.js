@@ -9,7 +9,11 @@ function App() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div style={{ minHeight: "100vh" }} className={`bg-${theme.background}-400 text-gray-700`}>
+    <div
+      data-testid="background"
+      style={{ minHeight: "100vh" }}
+      className={`bg-${theme.background}-400 text-gray-700`}
+    >
       <div className="container m-auto pt-4">
         {/* <Inputs /> */}
         {/* <Battery /> */}
